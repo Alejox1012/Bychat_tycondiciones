@@ -1,0 +1,592 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas de igual ancho */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilo para los elementos del header */
+.header-item {
+    position: sticky;
+    text-align: center; /* Centra el contenido de cada parte del grid */
+}
+
+
+
+body {
+background-color: #14141e;
+color: white;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 60%;
+}
+
+button {
+    border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; /* Centra el contenido del footer */
+    margin-bottom: -0.1%;
+    font-size: 90%;
+}
+
+/* Estilo para la imagen en el footer */
+.footer-image {
+    width: 100%; /* La imagen ocupará el 100% del ancho de la página */
+}
+
+.footer-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+.footer-content h2{
+    position: fixed;
+    left: 5%;
+}
+.footer-content img{
+    position: fixed;
+    left: 2.5%;
+}
+.footer-content a{
+    position: fixed;
+    right: 5%;
+    color: white;
+    font-size: 140%;
+    text-decoration: none;
+   
+}
+.footer-content a:last-child{
+    position: fixed;
+    right: 12%;
+   
+}
+
+
+
+#iconosredes2 {
+    position: fixed;
+    left: 47%;
+    width: 1.4%;
+}
+
+#iconosredes1 {
+    position: fixed;
+    left: 48.9%;
+    width: 1.4%;
+}
+
+#iconosredes3 {
+    position: fixed;
+    left: 50.4%;
+    width: 1.7%;
+}
+
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1%;
+   
+    margin-top: -4em; /* Usando una unidad relativa */
+    margin-left: 6%;
+    transform: translate(0, 0); 
+}
+
+
+
+ header h1{
+    font-size: 320%;
+    margin-top: 0%;
+ }
+
+#item1{
+    margin-top: 4%;
+    
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 200px; /* Divide en dos columnas: una para la sección y otra para el aside */
+    gap: 5%; /* Espacio entre las dos columnas */
+    max-width: 68%; /* Ancho máximo del contenedor */
+    margin-left: 25%;
+    
+}
+
+
+#item2,#item3{
+    margin-top: 8%;
+    position: fixed;
+}
+
+
+
+#item2 {
+   left: 5%;
+}
+
+#item3 {
+    top: -10.9%;
+    margin-left:85%/* Ajusta la posición horizontal (right) según tus necesidades */
+}
+.header-item:nth-child(2) {
+    position: fixed;
+    top: 0%;
+    left: 12%;
+    right: 14%;
+    transform: translate(0, 0); /* Asegura que no haya ningún desplazamiento */
+}
+
+
+
+
+
+
+#botavanpqrs{
+   margin-right: 35px;
+}
+
+#botavanpol, #botavanpqrs {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    gap: 200px;
+    color: white;
+    border-radius: 50px; /* Borde redondeado */
+  }
+
+ 
+  #botavanpol:hover, #botavanpqrs:hover {
+    background-color: white;
+    color: #6034FC;
+    font-size: 12px; 
+  font-weight: bold;
+  }
+
+  .texto-oculto {
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    margin-left: 10px; 
+  }
+  
+  #item2:hover .texto-oculto {
+    opacity: 1; 
+    left: 200px;
+    color: white;
+  }
+  
+
+
+
+
+/* Estilo para la sección */
+section {
+
+    padding: 10px;
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 25%;
+}
+
+/* Estilo para el aside */
+aside {
+   
+    position: fixed;
+    right: 0; /* Fija el elemento en el lado derecho */
+    top: 200px; 
+    margin-top: 16%;
+    
+}
+
+
+
+#celulares{
+  width: 400px;
+  margin-right: -230px;
+  margin-top: -200px;
+}
+#celulares {
+    width: 360px;
+    margin-right: -200px;
+    margin-top: -200px;
+    transition: transform 0.5s; /* Agrega una transición suave de 0.5 segundos a la propiedad transform */
+  }
+  
+  #celulares.rotated {
+    transform: rotate(20deg); /* Aplica una rotación de 20 grados cuando la clase 'rotated' está presente */
+  }
+
+#logo{
+    position: fixed;
+    width: 54px;
+    right: 120px;
+    bottom: 260px;
+}
+  
+#flag{
+    position: fixed;
+    right: 125px;
+    top: 42.1px;
+}
+
+/* Para navegadores WebKit (Chrome y Safari) */
+/* Cambia el ancho y el color de la barra del scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    
+    background-color: transparent; /* Cambia el fondo del scrollbar */
+  }
+  
+  /* Cambia el fondo de la barra del scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background-color: #6034FC;
+    border-radius: 6px;
+  }
+  
+  /* Para navegadores Firefox */
+  /* Cambia el ancho de la barra del scrollbar */
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: transparent #6034FC; /* Cambia el fondo del scrollbar y el color del puntero */
+  }
+
+  /* Agrega estos estilos a tu archivo CSS (main.css) */
+
+/* Clase para ocultar las letras y contraer las líneas */
+.header-hide {
+    color: transparent; /* Hace que las letras sean transparentes */
+    width: 0; /* Reduce el ancho de las líneas a 0 */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    transition: all 0.5s; /* Agrega una transición suave */
+  }
+  
+  /* Clase para mostrar las letras y expandir las líneas */
+  .header-show {
+    color: initial; /* Restaura el color de las letras */
+    width: 100%; /* Devuelve el ancho completo a las líneas */
+  }
+
+  
+  
+/* Agrega estos estilos a tu archivo CSS (main.css) */
+
+/* Clase para contraer las imágenes hacia el h2 */
+.line-img.contract {
+    transform: scaleX(0); /* Escala horizontal a 0 para contraer las imágenes */
+    transition: transform 1s; /* Hace que la animación sea más lenta (ajusta la duración según tu preferencia) */
+}
+  
+
+
+#item4 {
+    position: fixed;
+    
+    margin-left: -9.6%;
+    margin-right: -10%;
+    top: 8%;
+    opacity: 0; /* Establece la opacidad al 50% (semi-transparente) */
+    z-index: -1; /* Envía el elemento al fondo (-1 es solo un ejemplo, puedes ajustarlo según tus necesidades) */
+}
+
+
+
+
+.en{
+    color: #6b6969;
+}
+.es{
+    color: #6034FC;
+}
+
+
+
+
+
+
+#containeruno {
+    position: fixed;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0.5%;
+    left: 100px;
+    top: 28%;
+    gap: 36%;
+    width: 10%;
+    background-color: #14141e;
+    border-radius: 1%;
+   
+  }
+
+  #menu {
+    width: 60%;
+    height: 400px;
+    border: 1px solid #14141e;
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Espacio entre los elementos */
+    overflow: hidden; /* Ocultar el contenido que no cabe */
+    margin-left: 29%;
+    border-radius: 0px;
+    background-color: #6034FC;
+
+  }
+  
+  
+  .item {
+    
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 18px solid #14141e;
+    font-size: 12px;
+   
+  }
+
+  .item a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  #scroll-up,
+  #scroll-down {
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+    background-color: none;
+    color: white;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    margin-bottom: 4%;
+    margin-left: 15%;
+    margin-top: -8% ;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .container{
+    position: fixed;
+    max-width: 600px;
+    height: 300px;
+    padding: 17px;
+    color: #555;
+    text-align: center;
+    margin-right: -20%;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6b6969;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+    
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+    
+  }
+  
+  .switch input:checked + .slider {
+    background-color: #6034FC;
+  }
+  
+  .switch input:checked + .slider:before {
+    -webkit-transform: translateX(35px);
+    -ms-transform: translateX(35px);
+    transform: translateX(35px);
+  }
+
+
+
+  /* Estilos para tabletas */
+
+@media only screen and (max-width: 1280px) {
+ #celulares {
+    padding-top: 50%;
+ }
+
+ .footer-image{
+    margin-bottom: -0.2%;
+
+ }
+
+ .textone{
+         margin-left: 14%;
+ }
+
+ .item4{
+    margin-left: 104%;
+ }
+
+}
+
+/* Estilos para teléfonos móviles */
+
+@media only screen and (max-width: 480px) {
+ 
+  #main-header {
+    padding: 10px;
+  }
+ 
+  .header-item {
+    margin-bottom: 10px;  
+    }
+
+  #texto {
+    display: none;
+  }
+
+  .textone {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  #containeruno {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #scroll-up,
+  #scroll-down {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  aside{
+    display: none;
+  }
+
+  .footer-image{
+    
+    width: 100%;
+    height: 50px;
+    margin-top: -3%;
+  }
+
+  .imagen20{
+    display: none;
+  }
+
+  #botavanpqrs{
+    margin-right: 60px;
+  }
+
+  section{
+    width: 270px;
+   padding-right: 20%;
+   margin-left: -20%;
+  }
+
+  #iconosredes1,#iconosredes2,#iconosredes3{
+    width: 4%;
+  }
+  #iconosredes1{
+    margin-left: -19%;
+  }
+  #iconosredes2{
+    margin-left: -26%;
+  }
+  #iconosredes3{
+    margin-left: -25%;
+  }
+  
+  #licencia{
+    font-size: 100%;
+  }
+ 
+
+  #item4{
+    margin-left: -100px;
+  }
+
+  #item3{
+   
+   
+   top: -15px;
+   left: -80px;
+   
+  }
+
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+  
+  .switch input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+}
